@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Paxton3"
+             x:Class="Paxton3.MainPage">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                iOS="0, 20, 0 ,0"/>
+    </ContentPage.Padding>
+
+    <StackLayout>
+        <Label x:Name="nameLabel"
+            Text = "Kyle Paxton     CSC 492 Assignment 3"
+            HorizontalOptions="CenterAndExpand"
+            FontAttributes="Bold"
+            FontSize="Small"
+            TextColor="MediumSlateBlue" />
+
+        <BoxView x:Name="boxview0"
+                 VerticalOptions="FillAndExpand">
+            <BoxView.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnBoxViewTapped"/>
+            </BoxView.GestureRecognizers>
+        </BoxView>
+
+        <BoxView x:Name="boxview1"
+                 VerticalOptions="FillAndExpand">
+            <BoxView.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnBoxViewTapped"/>
+            </BoxView.GestureRecognizers>
+        </BoxView>
+        
+
+        
+        <Button x:Name="startGameButton"
+                Text="Begin"
+                Font="Large"
+                HorizontalOptions="Center"
+                Clicked="OnStartGameButtonClicked"/>
+
+        <BoxView x:Name="boxview2"
+                 VerticalOptions="FillAndExpand">
+            <BoxView.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnBoxViewTapped"/>
+            </BoxView.GestureRecognizers>
+        </BoxView>
+
+        <BoxView x:Name="boxview3"
+                 VerticalOptions="FillAndExpand">
+            <BoxView.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnBoxViewTapped"/>
+            </BoxView.GestureRecognizers>
+        </BoxView>
+
+        <BoxView x:Name="boxview4"
+                 VerticalOptions="FillAndExpand">
+            <BoxView.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnBoxViewTapped"/>
+            </BoxView.GestureRecognizers>
+        </BoxView>
+        
+    </StackLayout>
+</ContentPage>
